@@ -3,9 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bliss Charoedza</title>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+    <header>
+        <div class="name">
+            <h3>Bliss S Charoedza</h3> <h4>Welcome To My Portfolio</h4>
+        </div>
+        
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
     
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! <br>
+            My name is Bliss Samuel Charoedza. <br>
+             I'm a software developer well-versed in HTML, CSS, JavaScript, PHP, Java, C, and VB.NET. I love creating efficient and elegant solutions.</p>
+    </section>
+
+    <div class="container">
+            
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>JavaScript</li>
+            <li>VB.NET</li>
+            <li>Java</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>PHP</li>
+            <li>C</li>
+        </ul>
+    </section>
+    
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project" id="project1">
+            <h3>Project One</h3>
+            <p>Description of project one.</p>
+        </div>
+        <div class="project" id="project2">
+            <h3>Project Two</h3>
+            <p>Description of project two.</p>
+        </div>
+    </section>
+    </div>
+
+    <!-- Contact form  -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <textarea id="message" name="message" rows="5" placeholder="Your message here" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 Bliss S Charoedza</p>
+    </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

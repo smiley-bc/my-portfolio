@@ -1,0 +1,190 @@
+
+body {
+    top:0;
+    background: #000;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    color: #333;
+    overflow-x: hidden;
+}
+/* live background */
+.bubble {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(4, 148, 231, 0.432);
+    animation: float 10s infinite linear;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(150vh) scale(0);
+    }
+    50% {
+        transform: translateY(50vh) scale(1);
+    }
+    100% {
+        transform: translateY(-10vh) scale(0);
+    }
+}
+
+h2{
+    text-decoration: underline;
+    position: relative;
+    color: antiquewhite;
+}
+li{
+    color:#4CAF50;
+}
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: top 0.5s;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 70px;
+    background: #0000008c;
+    color: white;
+}
+header .name{
+    margin: 0 5px ;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+}
+header .name>*{
+    margin: auto 5px;
+}
+header .name h3{
+    text-decoration: underline;
+}
+header .name h4{
+    color: antiquewhite;
+}
+/* navigation links */
+nav {
+    display: flex;
+    justify-content: center; 
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: auto 0;
+    display: flex;
+    align-items: center; 
+}
+
+nav li {
+    margin: auto 5px;
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    transition: all 1s ease;
+}
+nav a:hover{
+    background:#4CAF50;
+    color: #000000;
+}
+#about{
+    position: relative;
+    margin: 40px 0;
+    padding: 1em;
+}
+p{
+    color: #45a049;
+}
+/* sidebar and section */
+.container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+#skills {
+    flex: 1; /* This will take up one-third of the container */
+    color: #fff5f5;
+    padding: 1em;
+    border-right: 1px solid #ffffff;
+}
+
+#projects {
+    flex: 2; /* This will take up two-thirds of the container */
+    padding: 1em;
+}
+/* contact form */
+#contactForm label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+    color: wheat;
+    font-size: 1rem;
+}
+
+label.required::after {
+    content: " *";
+    color: red;
+}
+
+#contact {
+    position: relative;
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#contact h2 {
+    margin-bottom: 1em;
+    font-size: 1.5em;
+}
+
+#contactForm {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+#contactForm input,
+#contactForm textarea {
+    background: rgba(255, 255, 255, 0.281);
+    padding: 0.8em;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#contactForm button {
+    padding: 0.8em;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contactForm button:hover {
+    background-color: #45a049;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
