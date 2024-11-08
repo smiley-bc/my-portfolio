@@ -1,19 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="css/main.css">
+    <script src="https://kit.fontawesome.com/ca8a2787fa.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <header>
         <div class="name">
-            <h3>Bliss S Charoedza</h3> <h4>Welcome To My Portfolio</h4>
+            <h2>Bliss </h2>
+
         </div>
-        
         <nav>
-            <ul>
+            <button class="navbar-burger" id="navbar-burger">
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+            <ul class="navbar-menu" id="navbar-menu">
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
@@ -21,40 +29,77 @@
             </ul>
         </nav>
     </header>
-    
+
+    <h2 class="welcome-text">Welcome To My Portfolio</h2>
+
     <section id="about">
-        <h2>About Me</h2>
-        <p>Hello! <br>
-            My name is Bliss Samuel Charoedza. <br>
-             I'm a software developer well-versed in HTML, CSS, JavaScript, PHP, Java, C, and VB.NET. I love creating efficient and elegant solutions.</p>
+        <h2 class="title">About Me</h2>
+        <p id="about-description">Hello! <br> My name is <a href="#">Bliss Samuel Charoedza.</a><br> I'm a software developer well-versed in HTML, CSS, JavaScript, PHP, Java, C, and VB.NET. I love creating efficient and elegant solutions.</p>
     </section>
 
-    <div class="container">
-            
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>JavaScript</li>
-            <li>VB.NET</li>
-            <li>Java</li>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>PHP</li>
-            <li>C</li>
-        </ul>
-    </section>
-    
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project" id="project1">
-            <h3>Project One</h3>
-            <p>Description of project one.</p>
-        </div>
-        <div class="project" id="project2">
-            <h3>Project Two</h3>
-            <p>Description of project two.</p>
-        </div>
-    </section>
+    <div class="container" style="border-bottom: 1px solid #ffffff;">
+
+        <section id="skills">
+            <h2 class="title">Skills</h2>
+            <ul id="skills-list">
+                <li class="skill-name">JavaScript</li>
+                <li class="skill-name">VB.NET</li>
+                <li class="skill-name">Java</li>
+                <li class="skill-name">HTML</li>
+                <li class="skill-name">CSS</li>
+                <li class="skill-name">PHP</li>
+                <li class="skill-name">C</li>
+            </ul>
+        </section>
+
+        <section id="projects">
+            <h2 class="title">Projects</h2>
+            <div class="project" id="project1">
+                <h3 class="project-name">Project One</h3>
+                <p class="project-description">Description of project one.</p>
+            </div>
+            <div class="project" id="project2">
+                <h3 class="project-name">Project Two</h3>
+                <p class="project-description">Description of project two.</p>
+            </div>
+        </section>
+        <section id="social-media">
+            <h2 class="title">Accounts</h2>
+            <ul class="social-media-accounts-list">
+                <li class="social-media-account">
+                    <a href="#" class="social-media-account-link"> <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </li>
+                <li class="social-media-account">
+                    <a href="#" class="social-media-account-link"> <i class="fa-brands fa-facebook"></i>
+                    </a>
+                </li>
+                <li class="social-media-account">
+                    <a href="#" class="social-media-account-link"> <i class="fa-brands fa-twitter"></i>
+                    </a>
+                </li>
+                <li class="social-media-account">
+                    <a href="#" class="social-media-account-link"> <i class="fa-brands fa-tiktok"></i>
+                    </a>
+                </li>
+                <li class="social-media-account">
+                    <a href="https://wa.me/263780709947" class="social-media-account-link"> <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </li>
+                <li class="social-media-account">
+                    <a href="#" class="social-media-account-link"> <i class="fa-brands fa-telegram"></i>
+                    </a>
+                </li>
+                <li class="social-media-account">
+                    <a href="#" class="social-media-account-link"> <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </li>
+                <li class="social-media-account">
+                    <a href="#" class="social-media-account-link"> <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </li>
+            </ul>
+        </section>
     </div>
 
     <!-- Contact form  -->
@@ -69,12 +114,12 @@
             <button type="submit">Send</button>
         </form>
     </section>
-    
     <footer>
         <p>&copy; 2024 Bliss S Charoedza</p>
     </footer>
-    
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/main.js"></script>
 </body>
+
 </html>
