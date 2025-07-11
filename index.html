@@ -47,9 +47,13 @@
             transform: translateY(-5px);
             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
         }
-        .six{
-            max-height: 600px;
-        }
+.six {
+    max-height: 600px; /* Set maximum height */
+    width: auto; /* Allow width to adjust automatically */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 100%; /* Ensure it doesn't exceed the container width */
+}
+
         .five{
             max-height: 400px;
         }
