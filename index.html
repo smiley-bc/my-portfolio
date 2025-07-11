@@ -52,6 +52,11 @@
             transform: translateY(-5px);
             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
         }
+        .image img{
+    width: 100%; /* Ensure the image takes the full width */
+    height: 200px; /* Set a fixed height for the image */
+    object-fit: cover; /* Maintain aspect ratio and cover the area */
+        }
 .six {
     max-height: 600px; /* Set maximum height */
     width: auto; /* Allow width to adjust automatically */
@@ -390,9 +395,9 @@
     <section id="about" class="py-20 bg-gray-50">
         <div class="max-w-6xl mx-auto px-6">
             <div class="grid md:grid-cols-2 gap-12 items-center">
-                <div class="relative">
+                <div class=" image relative">
                     <div class="absolute -top-6 -left-6 w-full h-full border-4 border-blue-400 rounded-lg"></div>
-                    <img src="https://placehold.co/500x600" alt="Casual office setting with developer working on laptop while drinking coffee" class="relative rounded-lg w-full shadow-xl" />
+                    <img src="images/blogo.jpg" alt="Casual office setting with developer working on laptop while drinking coffee" class="relative rounded-lg w-full shadow-xl" />
                 </div>
                 <div>
                     <h2 class="text-3xl font-bold mb-6">About Me</h2>
