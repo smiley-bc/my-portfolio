@@ -53,10 +53,11 @@
     height: auto; /* Maintain aspect ratio */
     max-width: 100%; /* Ensure it doesn't exceed the container width */
 }
-
-        .five{
-            max-height: 400px;
-        }
+.project-card img {
+    width: 600px; /* Set width to 600px */
+    height: 400px; /* Set height to 400px */
+    object-fit: cover; /* Maintain aspect ratio and cover the area */
+}
     </style>
 </head>
 <body class="text-gray-800">
@@ -112,7 +113,7 @@
                 </p>
             </div>
             
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
     <!-- Project 1 -->
     <div class="project-card bg-white rounded-lg overflow-hidden shadow-md">
         <div class="relative pb-2/3">
